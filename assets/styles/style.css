@@ -1,0 +1,22 @@
+/* Header */
+
+header {
+    background-image: url('../img/banner-bg.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 200px; 
+    overflow: hidden; 
+}
+
+.banner h1 {
+    color: white;
+    font-size: 48px; 
+    margin-left: 20px;
+}
