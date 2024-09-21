@@ -1,12 +1,13 @@
 /* Header */
 
 header {
-    background-image: url('../img/banner-bg.svg');
-    background-size: cover;
-    background-position: center;
+   
 }
 
 .banner {
+    background-image: url('../img/banner-bg.svg');
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,3 +21,5 @@ header {
     font-size: 48px; 
     margin-left: 20px;
 }
+
+/* Body */
