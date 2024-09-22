@@ -13,6 +13,7 @@ body {
 h2,
 h3 {
   color: #e9739b;
+  margin: 0px;
 }
 h4 {
   margin: 10px;
@@ -45,6 +46,7 @@ header {
 }
 .content-header {
   text-align: center;
+  margin: 10px;
 }
 
 /* Main */
@@ -126,7 +128,7 @@ nav a {
   display: inline-block;
 }
 
-nav a:hover {
+nav a:hover, .slider-button:hover {
   color: #fff6d9;
   border: 2px solid #fff6d9;
   background-color: #e9739b;
@@ -258,7 +260,7 @@ aside {
 /* Slider */
 .slider-buttons {
   text-align: center;
-  padding-top: 25px;
+  padding: 25px;
 }
 .slider-button {
   margin: 10px;
@@ -269,9 +271,4 @@ aside {
   background-color: #fff6d9;
   padding: 10px 20px;
   display: inline-block;
-}
-.slider-button:hover {
-  color: #fff6d9;
-  border: 2px solid #fff6d9;
-  background-color: #e9739b;
 }
