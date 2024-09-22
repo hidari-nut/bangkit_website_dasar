@@ -1,18 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
 /* Body */
 body {
   font-family: "Baloo 2", sans-serif;
+  font-size: 150%;
   background-color: #fff6d9;
   margin: 0;
   padding: 0;
 }
-h1,
 h2,
 h3 {
   color: #e9739b;
 }
+h4 {
+  margin: 10px;
+  color: #e9739b;
+}
+p {
+  font-weight: 400;
+}
 
 /* Header */
 header {
+  display: inline;
 }
 
 .jumbotron {
@@ -23,8 +35,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  height: 200px;
-  overflow: hidden;
+  height: 300px;
 }
 
 .jumbotron h1 {
@@ -32,33 +43,36 @@ header {
   font-size: 48px;
   margin-left: 20px;
 }
+.content-header {
+  text-align: center;
+}
 
 /* Main */
 main {
-  padding: 20px;
-}
-div {
-  width: 50%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+  overflow: auto;
 }
 
 .card {
-  border: 5px solid #e9739b;
+  box-shadow: 0 0px 16px 0 #e9739b;
+  border: 2px solid #e9739b;
   border-radius: 10px;
   padding: 20px;
   margin-top: 20px;
-  background-color: white;
+  display: none;
 }
-
-#bio-image {
-  max-height: 300px;
+.card img {
+  max-width: 100%;
+  height: auto;
 }
-
-.blog-image {
-  max-height: 300px;
+.active {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  flex: 1;
 }
 
 /* Footer */
@@ -69,16 +83,31 @@ footer {
 }
 
 /* Intro & Navigations */
-#intro {
-  text-align: center;
-}
-#intro h1 {
+
+#intro h2,
+p {
   margin: 5px;
+  padding-left: 30px;
+}
+#intro h2 {
+  font-size: 36px;
 }
 #intro p {
-  font-size: 28px;
-  margin: 5px;
+  font-size: 22px;
 }
+
+nav {
+  background-color: #fff6d9;
+  padding: 5px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+nav ul {
+  padding-inline: 4rem;
+  gap: 2rem;
+}
+
 nav li {
   display: inline;
   list-style-type: none;
@@ -108,6 +137,12 @@ nav a:hover {
 .profile section {
   text-align: center;
 }
+.profile img {
+  border-radius: 100%;
+  border: 2px solid #e9739b;
+  background: white;
+  width: 50%;
+}
 .profile figcaption {
   font-size: 18px;
   font-weight: bolder;
@@ -126,10 +161,117 @@ nav a:hover {
   text-align: right;
 }
 #content {
-  float: left;
-  width: 75%;
+  flex: 3;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+aside {
+  flex: 1;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: block;
 }
 
-aside {
-  float: right;
+/* Bio */
+#bio {
+  text-align: center;
+}
+#bio-image {
+  display: inline-block;
+  max-width: 100%;
+  border-radius: 50px;
+}
+
+/* Discography */
+
+.performers {
+  margin-top: 10px;
+}
+.discography-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.discography-content img{
+  height: 315px;
+}
+
+/* Blog */
+#blog-slider img {
+  border-radius: 50px;
+}
+
+/* Media Container */
+@media screen and (max-width: 768px) {
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+  nav li {
+    margin-right: 10px;
+  }
+  nav ul {
+    padding-inline: 2rem;
+    gap: 1rem;
+  }
+  nav a {
+    font-size: 16px;
+    padding: 2px 5px;
+  }
+  iframe{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1369px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+  .jumbotron {
+    background-image: none;
+    background-color: #e9739b;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .jumbotron h1 {
+    color: white;
+    font-size: 40px;
+    margin: 0;
+  }
+
+  .jumbotron .image-container {
+    display: none;
+  }
+
+  #intro {
+    text-align: center;
+  }
+}
+
+/* Slider */
+.slider-buttons {
+  text-align: center;
+  padding-top: 25px;
+}
+.slider-button {
+  margin: 10px;
+  font-size: 24px;
+  font-weight: bolder;
+  color: #e9739b;
+  border: 2px solid #e9739b;
+  background-color: #fff6d9;
+  padding: 10px 20px;
+  display: inline-block;
+}
+.slider-button:hover {
+  color: #fff6d9;
+  border: 2px solid #fff6d9;
+  background-color: #e9739b;
 }
