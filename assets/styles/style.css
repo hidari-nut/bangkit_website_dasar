@@ -1,25 +1,135 @@
-/* Header */
-
-header {
-   
-}
-
-.banner {
-    background-image: url('../img/banner-bg.svg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    height: 200px; 
-    overflow: hidden; 
-}
-
-.banner h1 {
-    color: white;
-    font-size: 48px; 
-    margin-left: 20px;
-}
-
 /* Body */
+body {
+  font-family: "Baloo 2", sans-serif;
+  background-color: #fff6d9;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  color: #e9739b;
+}
+
+/* Header */
+header {
+}
+
+.jumbotron {
+  background-image: url("../img/banner-bg.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.jumbotron h1 {
+  color: white;
+  font-size: 48px;
+  margin-left: 20px;
+}
+
+/* Main */
+main {
+  padding: 20px;
+}
+div {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 5px solid #e9739b;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: white;
+}
+
+#bio-image {
+  max-height: 300px;
+}
+
+.blog-image {
+  max-height: 300px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  color: #fff6d9;
+  background-color: #e9739b;
+}
+
+/* Intro & Navigations */
+#intro {
+  text-align: center;
+}
+#intro h1 {
+  margin: 5px;
+}
+#intro p {
+  font-size: 28px;
+  margin: 5px;
+}
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav a {
+  text-transform: uppercase;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #e9739b;
+  border: 2px solid #e9739b;
+  background-color: #fff6d9;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+nav a:hover {
+  color: #fff6d9;
+  border: 2px solid #fff6d9;
+  background-color: #e9739b;
+}
+
+/* Profile */
+.profile header,
+.profile section {
+  text-align: center;
+}
+.profile figcaption {
+  font-size: 18px;
+  font-weight: bolder;
+  color: #e9739b;
+}
+.profile h3 {
+  color: black;
+}
+.profile table {
+  margin: 0 auto;
+}
+.profile table th {
+  text-align: left;
+}
+.profile table td {
+  text-align: right;
+}
+#content {
+  float: left;
+  width: 75%;
+}
+
+aside {
+  float: right;
+}

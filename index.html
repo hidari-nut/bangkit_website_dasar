@@ -4,15 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/styles/style.css">
+
+  <!-- Google Fonts -->
+
+  <!-- Baloo 2 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+
   <title>Project Akhir Membuat Website</title>
 </head>
 
 <body>
   <header>
     <!-- BANNER -->
-    <div class="banner">
-      <h1>Kousaka Umi</h1>
+    <div class="jumbotron">
+      <h1>☆ Kousaka Umi's Personal Room ☆</h1>
       <div class="image-container">
         <img src="assets/img/Banner300.png" alt="Kousaka Umi">
       </div>
@@ -22,21 +32,13 @@
   <main>
 
     <!-- INTRO -->
-    <div>
-      <h1 id="intro">Umimin☆</h1>
-      <p><q>My name is Kousaka Umi! I look forward to seeing all the different idols gathering here! Hey hey, Producer,
-          hurry
-          up
-          and let's go!</q>
+    <div id="intro">
+      <h1><em>Umimin !☆!</em></h1>
+      <p><q>My name is <strong>Kousaka Umi</strong>! I look forward to seeing all the different idols and fans gathering here!</q>
       </p>
+      <!-- NAVIGATION -->
       <nav>
-        <!-- NAVIGATION -->
         <ul>
-          <li>
-            <a href="#intro">
-              Intro
-            </a>
-          </li>
           <li>
             <a href="#bio">
               Biographies
@@ -57,7 +59,7 @@
 
     <div>
       <!-- BIOGRAPHY -->
-      <article>
+      <article class="card">
         <h2 id="bio">Biographies</h2>
         <p>Umi is a an athletic girl who excels at almost every sport. She has a very energetic personality to the point
           that
@@ -65,18 +67,18 @@
           also
           good
           with gymnastics, and she took ballet lessons when she was younger.
-          All of this made her body very flexible. While she is a sporty girl, she's definitely not a tomboy and she's
-          happy
-          to wear cute dresses.</p>
-        <img src="assets/img/Bio.png">
+          All of this made her body very flexible. While she is a sporty girl, she's not a tomboy as she's
+          happy to wear cute dresses.</p>
+        <img src="assets/img/Bio.png" alt="Kousaka Umi" id="bio-image">
       </article>
 
 
       <!-- DISCOGRAPHY -->
-      <article>
+      <article class="card">
         <section>
           <h2 id="discography">Discographies</h2>
-          <p>Umi likes singing as much as she likes to dance! Try vibin to her songs♪ Click on the album cover to hear the song!</p>
+          <p>Umi likes singing as much as she likes to dance! Try vibin to her songs♪ Click on the album cover to hear
+            the song!</p>
         </section>
 
         <section>
@@ -158,7 +160,7 @@
       </article>
 
       <!-- BLOG -->
-      <article>
+      <article class="card">
         <section>
           <h2 id="blog">Blog Posts</h2>
           <p>
@@ -167,14 +169,14 @@
         </section>
         <section>
           <h3>Full of energy even in winter!</h3>
-          <img src="assets/img/Blog01.png">
+          <img src="assets/img/Blog01.png" alt="Full of energy even in winter!" class="blog-image">
           <p><q>Wow... This slope looks pretty steep from above! No, it's not scary, I'm really looking forward to it♪
               All right, let's go! Ready... Yay!!!</q></p>
         </section>
 
         <section>
           <h3>Flowing float♪</h3>
-          <img src="assets/img/Blog02.png">
+          <img src="assets/img/Blog02.png" alt="Flowing float♪" class="blog-image">
           <p><q>Yay, I got somen noodles! Ah, there are pink somen noodles inside! It's like girly somen noodles!
               I feel excited☆ Will eating them increase my appeal? Alright... Minachin, keep on washing!
             </q></p>
@@ -182,7 +184,7 @@
 
         <section>
           <h3>New Year's Happiest Girl</h3>
-          <img src="assets/img/Blog03.png">
+          <img src="assets/img/Blog03.png" alt="New Year's Happiest Girl" class="blog-image">
           <p><q>This dress is cute, isn't it...? I can't put it on by myself,
               it's hard work, but it makes me feel like a true princess! ☆Hey! It suits me pretty well, doesn't
               it...?</q>
@@ -191,7 +193,7 @@
 
         <section>
           <h3>Big Waaave!!</h3>
-          <img src="assets/img/Blog04.png">
+          <img src="assets/img/Blog04.png" alt="Big Waaave!!" class="blog-image">
           <p><q>Hehehe... Everyone, your engines are starting up!
               It feels great☆ I'm going to get pumped up too and go all out! Now, let's surf, Umimin!</q></p>
         </section>
@@ -200,7 +202,7 @@
 
     <aside>
       <!-- PROFILE -->
-      <article>
+      <article  class="card profile">
         <header>
           <figure>
             <img src="assets/img/Prof.png" width="288px" />
@@ -236,10 +238,11 @@
               <th>Hometown</th>
               <td>Chiba</td>
             </tr>
-          </table>          
+          </table>
         </section>
       </article>
     </aside>
+    
   </main>
 
   <footer>
@@ -247,7 +250,8 @@
       <!-- CREDIT -->
       <p>&copy; 2024 Bandai Namco. All rights reserved. Idolm@ster Million Live! is a registered trademark of Bandai
         Namco.</p>
-      <p>Website created by Vis for fan purposes only. All images, characters, and related content are the property of
+      <p>Website created by Vis for assignment purposes only. All images, characters, and related content are the
+        property of
         Bandai
         Namco.</p>
     </div>
