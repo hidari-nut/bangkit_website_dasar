@@ -79,6 +79,7 @@ main {
 
 /* Footer */
 footer {
+  margin-top: 15px;
   padding: 20px;
   color: #fff6d9;
   background-color: #e9739b;
@@ -87,7 +88,7 @@ footer {
 /* Intro & Navigations */
 
 #intro h2,
-p {
+#intro p {
   margin: 5px;
   padding-left: 30px;
 }
